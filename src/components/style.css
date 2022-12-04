@@ -1,0 +1,141 @@
+@font-face {
+	font-family: iran;
+	src: url('../fonts/IRANSans_0.ttf');
+}
+
+* {
+	direction: rtl;
+	font-family: iran;
+}
+/*.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+.shoping-card {
+	text-align: center;
+	box-shadow: 0px 2px 8px 0px #82589f;
+	margin: 20px 200px;
+	border-radius: 15px;
+	padding: 10px;
+	width: 300px;
+}
+.shoping-card button {
+	display: flex;
+	justify-content: flex-start;
+	background-color: #3b3b98;
+	color: white;
+	padding: 3px 5px;
+	border-radius: 7px;
+	/* position: absolute; */
+	font-size: 0.6em;
+	z-index: 1;
+	width: 22%;
+}
+
+/* font-size: 1em;
+
+  padding: 10px 15px;
+  color:white;
+  border: 1px solid red;
+  border-radius: 15%;
+  background-color: navy;
+
+
+} */
+
+.shoping-card .img-sec {
+	position: relative;
+}
+
+.shoping-card .img-sec img {
+	width: 90%;
+	height: 90%;
+	transform-origin: 0 0;
+	transition: transform 0.5s ease-in-out;
+	cursor: zoom-in;
+}
+
+.shoping-card .img-sec img:hover {
+	transform: scale(1.5);
+	z-index: 1;
+}
+
+.shoping-card .title {
+	color: #182c61;
+	margin: 15px;
+	font-size: 1.2rem;
+}
+
+.shoping-card .buttons {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 5px 15px;
+}
+
+.shoping-card .buttons .right .price {
+	border-radius: 25%;
+	color: #182c61;
+	font-size: 1.3rem;
+	font-weight: bold;
+	width: 50%;
+	align-items: center;
+	justify-content: center;
+}
+
+.shoping-card .buttons .left {
+	display: flex;
+}
+
+.shoping-card .buttons .left .extend-btn {
+	display: flex;
+	margin-left: 2px;
+	align-items: center;
+	justify-content: space-between;
+	background-color: #3b3b98;
+	color: rgb(13, 13, 13);
+	width: 40px;
+	height: 30px;
+	padding: 8px 12px;
+	border-radius: 25px;
+	cursor: pointer;
+	transition: 0.75s;
+}
+
+.shoping-card .buttons .left .extend-btn:hover {
+	width: 80px;
+	background-color: #1b9cfc;
+}
+
+.shoping-card .buttons .left .extend-btn:hover .b-text {
+	display: block;
+}
+
+.shoping-card .buttons .left .extend-btn .b-text {
+	display: none;
+	color: white;
+}
+
+.shoping-card .buttons .left .extend-btn .b-icon {
+	color: white;
+	padding-top: 3px;
+}
+
+.fas {
+	transition: all 0.3s ease-in-out;
+}
+.fas:hover {
+	transform: scale(1.5);
+}
+
+a {
+	text-decoration: none;
+}
+
+.b-text {
+	transition: all 0.3s ease-in-out;
+}
+.b-text:hover {
+	transform: scale(1.3);
+}
