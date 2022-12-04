@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import "font-awesome/css/font-awesome.min.css";
+import products from "./products.json";
+import ShoppingCard from "./components/Shopping-card.js";
+import Search from "./components/Search.js";
 
-function App() {
+export default function App() {
+  const [searchTerm, setSearchTerm] = useState("");
+  const handleSearch = (event) => {
+    setSearchTerm(event.target.value);
+  };
+
+  const searchedItems = products.filter((product) => {
+    return product.title.includes(searchTerm);
+  });
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Search search={searchTerm} onSearch={handleSearch} />
+
+      {searchedItems.map((item) => {
+        return <ShoppingCard card={item} />;
+      })}
     </div>
   );
 }
-
-export default App;
