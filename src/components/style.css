@@ -21,32 +21,21 @@
   justify-content: flex-start;
   background-color: #3b3b98;
   color: white;
-  padding: 3px 5px;
-  border-radius: 7px;
-  /* position: absolute; */
+  border: none;
+  /* padding: 3px 0px; */
+  border-radius: 10px;
   font-size: 0.6em;
   z-index: 1;
-  width: 22%;
+  width: 25%;
 }
-
-/* font-size: 1em;
-
-  padding: 10px 15px;
-  color:white;
-  border: 1px solid red;
-  border-radius: 15%;
-  background-color: navy;
-
-
-} */
 
 .shoping-card .img-sec {
   position: relative;
 }
 
 .shoping-card .img-sec img {
-  width: 90%;
-  height: 90%;
+  width: 80%;
+  height: 80%;
   transform-origin: 0 0;
   transition: transform 0.5s ease-in-out;
   cursor: zoom-in;

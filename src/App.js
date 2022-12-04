@@ -1,5 +1,4 @@
 import { useState } from "react";
-import "font-awesome/css/font-awesome.min.css";
 import products from "./products.json";
 import ShoppingCard from "./components/Shopping-card.js";
 import Search from "./components/Search.js";
