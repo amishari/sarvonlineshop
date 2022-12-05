@@ -2,7 +2,7 @@ import './style.css';
 import { useState } from 'react';
 import Modal from 'react-modal';
 
-const Header = () => {
+const Header = (props) => {
 	const [modalOpen, setModalOpen] = useState(false);
 	const customStyles = {
 		content: {
@@ -13,9 +13,11 @@ const Header = () => {
 			marginRight: '-50%',
 			transform: 'translate(-50%, -50%)',
 			backgroundColor: 'white',
-			width: 400
+			width: 600,
+			height: 250
 		}
 	};
+	const spec = props.spec.spec;
 	return (
 		<>
 			<button class="header" onClick={setModalOpen}>
@@ -25,7 +27,9 @@ const Header = () => {
 				isOpen={modalOpen}
 				onRequestClose={() => setModalOpen(false)}
 				style={customStyles}>
-				<div>Login/Signup</div>
+				<div>
+					<img src={spec} alt="n/a" />
+				</div>
 
 				<button onClick={() => setModalOpen(false)}>بستن</button>
 			</Modal>

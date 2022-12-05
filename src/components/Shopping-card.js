@@ -7,7 +7,7 @@ import Header from './Header.js';
 export default function ShoppingCard(props) {
 	return (
 		<div className="shoping-card">
-			<Header />
+			<Header spec={props.card} />
 			<Picture picture={props.card} />
 			<Title title={props.card} />
 			<Buttons buttons={props.card} />
