@@ -27,6 +27,11 @@
   font-size: 0.6em;
   z-index: 1;
   width: 25%;
+  cursor:pointer;
+}
+button:hover{
+  background-color: green;
+}
 }
 
 .shoping-card .img-sec {
