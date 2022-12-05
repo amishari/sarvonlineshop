@@ -1,4 +1,4 @@
-
+[
 {title: 'توالت تاشو كلاف دار گالوانيزه با قيف کوتاه- حلقه تتا', id: '310252', price: '2,550,000', picture: 'images/products/310252.jpg', spec: 'images/specifications/s310252.jpg'}
 
 {title: 'توالت تاشوكلاف دار رنگي با  قيف کوتاه- حلقه تتا', id: '310251', price: '2,550,000', picture: 'images/products/310251.jpg', spec: 'images/specifications/s310251.jpg'}
@@ -104,3 +104,4 @@
 {title: 'ویلچر (صندلی چرخدار) حمامی - کرم', id: '399330', price: '22,000,000', picture: 'images/products/399330.jpg', spec: 'images/specifications/s399330.jpg'}
  
 {title: 'سیفتی باکس 3 لیتری ', id: '399240', price: '300,000', picture: 'images/products/399240.jpg', spec: 'images/specifications/s399240.jpg'}
+]
