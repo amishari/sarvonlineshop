@@ -1,10 +1,10 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import products from "./products-short.json";
 import ShoppingCard from "./components/Shopping-card.js";
 import Search from "./components/Search.js";
 
 export default function App() {
-  const [searchTerm, setSearchTerm] = useState("");
+  const [searchTerm, setSearchTerm] = React.useState("");
   const handleSearch = (event) => {
     setSearchTerm(event.target.value);
   };
