@@ -1,5 +1,5 @@
 import { useState } from "react";
-import products from "./products.json";
+import products from "./products-short.json";
 import ShoppingCard from "./components/Shopping-card.js";
 import Search from "./components/Search.js";
 
