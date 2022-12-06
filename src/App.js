@@ -9,9 +9,11 @@ export default function App() {
     setSearchTerm(event.target.value);
   };
 
-  const searchedItems = products.filter((product) => {
-    return product.title.includes(searchTerm);
-  });
+	const searchedItems = products.filter((product) => {
+		return (
+			product.title.includes(searchTerm) || product.id.includes(searchTerm)
+		);
+	});
 
   return (
     <div className="App">
