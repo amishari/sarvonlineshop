@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import products from "./products-short.json";
 import ShoppingCard from "./components/Shopping-card.js";
 import Search from "./components/Search.js";
+import List from "./components/List.js";
 
 export default function App() {
   const [searchTerm, setSearchTerm] = React.useState("");
@@ -10,16 +11,16 @@ export default function App() {
   };
 
   const searchedItems = products.filter((product) => {
-    return product.title.includes(searchTerm);
+    return (
+      product.title.includes(searchTerm) || product.id.includes(searchTerm)
+    );
   });
 
   return (
     <div className="App">
       <Search search={searchTerm} onSearch={handleSearch} />
 
-      {searchedItems.map((item) => {
-        return <ShoppingCard card={item} />;
-      })}
+      <List list={searchedItems} />
     </div>
   );
 }
