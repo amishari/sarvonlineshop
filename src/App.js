@@ -10,7 +10,6 @@ export default function App() {
     setSearchTerm(event.target.value);
   };
 
-<<<<<<< HEAD
   const searchedItems = products.filter((product) => {
     return (
       product.title.includes(searchTerm) || product.id.includes(searchTerm)
